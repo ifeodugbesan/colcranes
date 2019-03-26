@@ -1,6 +1,16 @@
 .navbar-lewagon {
-  justify-content: space-between;
+  display: block;
   background: white;
+  height: 150px;
+  padding: 8px 40px 0 40px;
+  @media only screen and (max-width: 768px) {
+    height: auto;
+    padding: 8px 40px;
+  }
+  @media only screen and (max-width: 576px) {
+    display: flex;
+    padding: 8px 15px;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,5 +18,54 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 250px;
+  @media only screen and (max-width: 768px) {
+    width: 200px;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 170px;
+  }
+}
+
+.colcranes-navbar-links-container {
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.5px solid #D0D0D0;
+  height: 44px;
+  @media only screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
+.colcranes-navbar-links-container-dropdown {
+  display: none;
+  @media only screen and (max-width: 576px) {
+    display: block;
+  }
+}
+
+.colcranes-navbar-link {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #787878;
+  font-weight: 500;
+  border-bottom: 4px solid transparent;
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.navbar-active {
+  border-bottom: 4px solid #FAC700;
+}
+
+.navbar-toggler {
+  background: #2E89C7;
+  border: 1px solid #2778AB;
+  color: #89DEFF !important;
+  font-size: 18px;
+  padding: 8px 20px;
 }
