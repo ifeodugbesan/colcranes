@@ -46,6 +46,9 @@
     width: 100%;
     border-top: 7px solid #FAC700;
   }
+  p {
+    color: #F4F4F4;
+  }
   a {
     background: #FAC700;
     padding: 15px 30px;
@@ -128,6 +131,10 @@
 .home-title {
   color: #3498DC;
   font-weight: bold;
+}
+
+.recent-works-container {
+  margin: 0 30px;
 }
 
 .recent-works-image {
