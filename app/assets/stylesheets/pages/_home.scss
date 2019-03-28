@@ -1,1 +1,213 @@
 // Specific CSS for your home-page
+.home-banner {
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset_url('colcranes-banner-image.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  @media only screen and (max-width: 1200px) {
+    padding: 80px;
+  }
+  @media only screen and (max-width: 992px) {
+    padding: 60px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 30px;
+  }
+  @media only screen and (max-width: 576px) {
+    padding: 10px;
+  }
+}
+
+.home-banner-content {
+  color: white;
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  @media only screen and (max-width: 1200px) {
+    width: 50%
+  }
+    @media only screen and (max-width: 992px) {
+    width: 60%
+  }
+    @media only screen and (max-width: 768px) {
+    width: 80%
+  }
+    @media only screen and (max-width: 576px) {
+    width: 100%
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  hr {
+    width: 100%;
+    border-top: 7px solid #FAC700;
+  }
+  a {
+    background: #FAC700;
+    padding: 15px 30px;
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+.text-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-section-text {
+  text-align: center;
+  padding: 10%;
+  width: 70%;
+  p {
+    margin: 0;
+    color: #A3A3A3;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 20px 0;
+    width: 100%;
+  }
+}
+
+.credentials-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.each-credential {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  p {
+    font-size: 14px;
+    color: #A3A3A3;
+  }
+}
+
+.credential-title {
+  color: #3498DC;
+  letter-spacing: 1px;
+  h6 {
+    font-weight: bold;
+  }
+}
+
+.yellow-circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #FAC700;
+  margin-bottom: 10px;
+  @media only screen and (max-width: 992px) {
+    height: 80px;
+    width: 80px;
+  }
+  @media only screen and (max-width: 768px) {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.colcranes-line-break {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.home-title {
+  color: #3498DC;
+  font-weight: bold;
+}
+
+.recent-works-image {
+  padding: 30px;
+  img {
+    width: 100%;
+  }
+}
+
+.home-products-text {
+  font-size: 14px;
+  color: #A3A3A3;
+}
+
+.home-products-link {
+  font-size: 14px;
+  color: #707783;
+  font-weight: bold;
+}
+
+.home-products-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 30px 0 30px;
+}
+
+.home-products-content {
+  width: 40%;
+}
+
+
+.home-services-text {
+  font-size: 14px;
+  color: #A3A3A3;
+}
+
+.home-services-link {
+  font-size: 14px;
+  color: #707783;
+  font-weight: bold;
+}
+
+.home-services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px 30px 30px;
+}
+
+.home-services-content {
+  width: 40%;
+  text-align: right;
+}
+
+.home-facts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F8F9;
+  margin: 0 30px;
+}
+
+.home-facts-content {
+  text-align: center;
+  padding: 30px;
+  h6 {
+    color: #454647;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.home-facts-main-container {
+  margin: 30px;
+}
+
+
+
+
