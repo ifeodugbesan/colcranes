@@ -48,19 +48,20 @@
 }
 
 .seo {
-  height: 45px;
+  height: 35px;
   background: #2C83BE;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
   p {
     margin: 0;
     color: white;
+    font-size: 14px;
     font-weight: lighter;
   }
   a {
     color: white;
+    font-size: 14px;
     text-decoration: none;
   }
 }
