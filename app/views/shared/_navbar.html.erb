@@ -3,11 +3,11 @@
     <%= image_tag "colcranes-navbar-logo.png" %>
     <% end %>
     <div class="colcranes-navbar-links-container">
-      <%= link_to "INICIO", "#", class: "colcranes-navbar-link" %>
+      <%= link_to "ACERCA DE", about_path, class: "colcranes-navbar-link" %>
       <%= link_to "PRODUCTOS", "#", class: "colcranes-navbar-link" %>
-      <%= link_to "SERVICIOS", "#", class: "colcranes-navbar-link" %>
+      <%= link_to "SERVICIOS", services_path, class: "colcranes-navbar-link" %>
       <%= link_to "REPUESTOS", "#", class: "colcranes-navbar-link" %>
-      <%= link_to "CONTACTO", contact_path, class: "colcranes-navbar-link" %>
+      <%= link_to "CONTACTO", contacts_path, class: "colcranes-navbar-link" %>
     </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +34,11 @@
         </li>
       <% else %>
         <li class="colcranes-navbar-links-container-dropdown">
-          <%= link_to "INICIO", "#", class: "colcranes-navbar-link" %>
+          <%= link_to "ACERCA DE", about_path, class: "colcranes-navbar-link" %>
           <%= link_to "PRODUCTOS", "#", class: "colcranes-navbar-link" %>
-          <%= link_to "SERVICIOS", "#", class: "colcranes-navbar-link" %>
+          <%= link_to "SERVICIOS", services_path, class: "colcranes-navbar-link" %>
           <%= link_to "REPUESTOS", "#", class: "colcranes-navbar-link" %>
-          <%= link_to "CONTACTO", contact_path, class: "colcranes-navbar-link" %>
+          <%= link_to "CONTACTO", contacts_path, class: "colcranes-navbar-link" %>
         </li>
       <% end %>
     </ul>
