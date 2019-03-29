@@ -7,7 +7,7 @@
     <div class="contact-us-form-wrapper">
       <div class="contact-us-form">
         <div class="contact-form-left">
-          <%= simple_form_for '/contact', url: contact_path do |f| %>
+          <%= simple_form_for '/contacts', url: contacts_path do |f| %>
             <%= f.input :name, label: false, placeholder:'Primer Nombre y Apellido', input_html: { class: "contact-form-name contact-form-input" } %>
             <%= f.input :email, label: false, placeholder:'Direccion de Correo', input_html: { class: "contact-form-name contact-form-input" } %>
             <%= f.input :message, as: :text, label: false, placeholder:'Mensaje', input_html: { class: "contact-form-message contact-form-input" } %>
