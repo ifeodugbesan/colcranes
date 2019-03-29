@@ -46,20 +46,20 @@
 
 .colcranes-navbar-link {
   margin-top: 4px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #787878;
   font-weight: 500;
   border-bottom: 4px solid transparent;
+  transition: border 0.5s ease;
   &:hover {
     text-decoration: none;
     color: black;
+    border-bottom: 0px solid #FAC700;
+    border-bottom: 4px solid #FAC700;
   }
-}
-
-.navbar-active {
-  border-bottom: 4px solid #FAC700;
 }
 
 .navbar-toggler {
