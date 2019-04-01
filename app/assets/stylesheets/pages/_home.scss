@@ -113,6 +113,9 @@
   border-radius: 50%;
   background: #FAC700;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media only screen and (max-width: 992px) {
     height: 80px;
     width: 80px;
@@ -121,6 +124,10 @@
     height: 70px;
     width: 70px;
   }
+}
+
+.yellow-circle-icon {
+  width: 65%;
 }
 
 .colcranes-line-break {

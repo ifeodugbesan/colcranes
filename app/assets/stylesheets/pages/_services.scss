@@ -1,0 +1,144 @@
+.services-banner {
+  background-position: right;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hanging-crane {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 60%;
+  @media only screen and (max-width: 992px) {
+    height: 50%;
+  }
+  @media only screen and (max-width: 576px) {
+    height: 40%;
+  }
+}
+
+.service-banner-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 48px;
+  @media only screen and (max-width: 1200px) {
+    margin: 40px;
+  }
+  @media only screen and (max-width: 992px) {
+    margin: 10px;
+    width: 45%;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 50%;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 70%;
+  }
+  h1 {
+    color: white;
+    font-size: 40px;
+    @media only screen and (max-width: 768px) {
+      font-size: 25px !important;
+    }
+  }
+  p {
+    color: #71DAFF;
+  }
+}
+.services-wrapper  {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.services-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-list {
+  height: 100%;
+  width: 50%;
+  margin-right: 20px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.services-image-container {
+  height: 100%;
+  width: 35%;
+  overflow: hidden;
+  @media only screen and (max-width: 992px) {
+    width: 55%;
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.services-image {
+  height: 100%;
+}
+
+.services-list-item {
+  display: flex;
+}
+
+.services-list-item-text {
+  p {
+    text-align: justify;
+  }
+}
+
+.services-list-item-number {
+  margin: 5px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-list-item-number-top {
+  background: #1896D6;
+  height: 50px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  h1 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.services-list-item-number-bottom {
+  background: #1788C2;
+  height: 20px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+  }
+}
+
+.services-nuestro-title {
+  color: #3498DC;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
