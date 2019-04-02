@@ -81,7 +81,7 @@
   flex-direction: column;
   justify-content: center;
   p {
-    color: black;
+    color: #898989;
   }
 }
 
@@ -118,7 +118,7 @@
   flex-direction: column;
   justify-content: center;
   p {
-    color: black;
+    color: #898989;
   }
 }
 
@@ -130,7 +130,7 @@
   }
   p {
     font-size: 14px;
-    color: black;
+    color: #898989;
   }
   @media only screen and (max-width: 1200px) {
     margin: 100px 80px;
@@ -152,7 +152,7 @@
   font-size: 20px;
   position: relative;
   left: 100%;
-  animation: marquee 16.8s linear infinite;
+  animation: marquee 16s linear infinite;
 }
 
 .marquee:hover span {

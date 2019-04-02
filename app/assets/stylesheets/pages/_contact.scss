@@ -85,7 +85,15 @@
 }
 
 .contact-form-left {
+  height: 100%;
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  h2 {
+    color: #1582B9;
+    font-size: 20px;
+  }
   @media only screen and (max-width: 1200px) {
     width: 80%;
   }
@@ -119,12 +127,22 @@
 .contact-form-input {
   resize: none;
   border: 0;
-  border-bottom: 0.5px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3 !important;
   border-radius: 0;
+  &:focus {
+    border-bottom: 3px solid #2C83BE !important;
+    box-shadow: none !important;
+  }
+}
+
+.input-field {
+  label:focus {
+    color: red !important;
+  }
 }
 
 .contact-form-button {
-  background: #2C83BE;
+  background: #2C83BE !important;
   padding: 5px 30px;
   p {
     color: white;
@@ -140,6 +158,9 @@
 .contact-form-social-links {
   font-size: 30px;
   color: #A5D8FD;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .form-info-content {
