@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :about, :contacts, :services, :products, :download_pdf]
+  skip_before_action :authenticate_user!, only: [:home, :about, :contacts, :services, :products, :send_email, :download_pdf]
 
   def home
   end
@@ -14,6 +14,12 @@ class PagesController < ApplicationController
   end
 
   def products
+  end
+
+  def send_email
+    contacts = params["contacts"]
+    UserMailer.send_email_to_contact(contacts).deliver_now
+    redirect_to root_path
   end
 
   def download_pdf
