@@ -81,6 +81,9 @@
   @media only screen and (max-width: 992px) {
     width: 100%;
     height: 300px;
+    h1 {
+      margin: 0;
+    }
   }
 }
 
@@ -132,12 +135,21 @@
   &:focus {
     border-bottom: 3px solid #2C83BE !important;
     box-shadow: none !important;
+
   }
 }
 
 .input-field {
-  label:focus {
-    color: red !important;
+  margin-bottom: 50px;
+  label {
+    color: #898989 !important;
+  }
+}
+
+#contacts_name, #contacts_email, #contacts_message {
+  margin-bottom: 30px;
+  @media only screen and (max-width: 992px) {
+    margin-bottom: 10px;
   }
 }
 

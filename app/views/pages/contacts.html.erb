@@ -11,15 +11,15 @@
           <%= simple_form_for :send_email, url: send_email_path, method: :get do |f| %>
             <div class="input-field contacts_name">
               <input class="form-control string required contact-form-name contact-form-input" type="text" name="contacts[name]" id="contacts_name">
-              <label id="contacts_name" for="contacts_name">Primer Nombre y Apellido</label>
+              <label id="contacts_name" class="label-contact-name" for="contacts_name">Primer Nombre y Apellido</label>
             </div>
             <div class="input-field contacts_email">
-              <input class="form-control string email required contact-form-name contact-form-input" type="email" name="contacts[email]" id="contacts_email">
-              <label id="contacts_email" for="contacts_email">Direccion de Correo</label>
+              <input class="form-control string email required contact-form-email contact-form-input" type="email" name="contacts[email]" id="contacts_email">
+              <label id="contacts_email" class="label-contact-email" for="contacts_email">Direccion de Correo</label>
             </div>
             <div class="input-field contacts_message">
               <textarea class="form-control text required contact-form-message contact-form-input materialize-textarea" name="contacts[message]" id="contacts_message"></textarea>
-              <label id="contacts_message" for="contacts_name">Mensaje</label>
+              <label id="contacts_message" class="label-contact-message" for="contacts_message">Mensaje</label>
             </div>
             <%= f.button :button, type: :submit,  class: "contact-form-button" do %>
               <p>Enviar</p>
