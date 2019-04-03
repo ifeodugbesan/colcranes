@@ -6,9 +6,15 @@
     <div class="footer-info">
       <div class="paginas">
         <p class="footer-info-header">PAGINAS</p>
-        <p style="font-size: 12px;">Nosotros</p>
-        <p style="font-size: 12px;">Contacto</p>
-        <p style="font-size: 12px;">Repuestos</p>
+        <%= link_to about_path do %>
+          <p style="font-size: 12px;">Acerca</p>
+        <% end %>
+        <%= link_to contacts_path do %>
+          <p style="font-size: 12px;">Contacto</p>
+        <% end %>
+        <%= link_to services_path do %>
+          <p style="font-size: 12px;">Servicios</p>
+        <% end %>
       </div>
       <div class="contacto">
         <p class="footer-info-header">CONTACTO</p>
