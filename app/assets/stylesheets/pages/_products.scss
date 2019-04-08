@@ -67,33 +67,34 @@
   }
 }
 
-#parrallax-container {
+.parrallax-container {
   position: relative;
 }
 
-#box1 {
+.box {
   position: absolute;
+}
+
+.box-sm {
+  width: 50%;
+}
+
+#box1 {
   left: 50%;
   top: 110vh;
 }
 
 #box2 {
-  width: 50px;
-  position: absolute;
   left: 0;
   top: 150vh;
 }
 
 #box3 {
-  // width: 50px;
-  position: absolute;
   right: 5%;
   top: 180vh;
 }
 
 #box4 {
-  width: 50px;
-  position: absolute;
   right: 5%;
   top: 110vh;
 }
