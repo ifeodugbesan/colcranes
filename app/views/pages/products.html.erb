@@ -8,7 +8,11 @@
     <%= image_tag 'hanging-crane.png', class: "hanging-crane" %>
   </div>
 </div>
-<div class="container">
+<div class="container" id="parrallax-container">
+  <%= image_tag "box.png", class: "parrallax-box", id: "box1" %>
+  <%= image_tag "box.png", class: "parrallax-box", id: "box2" %>
+  <%= image_tag "box.png", class: "parrallax-box", id: "box3" %>
+  <%= image_tag "box.png", class: "parrallax-box", id: "box4" %>
   <div class="product-cards-container">
     <h6 class="products-main-title">Puente Gruas</h6>
     <div class="row">
@@ -95,6 +99,45 @@
             </div>
           </div>
         </div>
+        <div class="card-container">
+          <div class="bottom-card-section"></div>
+          <div class="top-card-section">
+            <%= image_tag "background1.png", class: "card-background-1" %>
+            <div class="card-title-holder">
+              <h1 class="card-title">Sistemas de Mando</h1>
+            </div>
+            <div class="card-sub-title-holder">
+              <p class="card-sub-title">Botoneras</p>
+              <p class="card-sub-title">Radio controles</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="bottom-card-section"></div>
+          <div class="top-card-section">
+            <%= image_tag "background1.png", class: "card-background-1" %>
+            <div class="card-title-holder">
+              <h1 class="card-title">Sistemas de Mando</h1>
+            </div>
+            <div class="card-sub-title-holder">
+              <p class="card-sub-title">Botoneras</p>
+              <p class="card-sub-title">Radio controles</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="bottom-card-section"></div>
+          <div class="top-card-section">
+            <%= image_tag "background1.png", class: "card-background-1" %>
+            <div class="card-title-holder">
+              <h1 class="card-title">Sistemas de Mando</h1>
+            </div>
+            <div class="card-sub-title-holder">
+              <p class="card-sub-title">Botoneras</p>
+              <p class="card-sub-title">Radio controles</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <%= image_tag 'colcranes-line-break.png', class: "colcranes-line-break" %>
@@ -140,12 +183,24 @@
   </div>
 </div>
 
-<!-- <div class="product-card margin-bottom">
-          <div class="product-card-image-container">
-            <%#= image_tag 'products-image.jpg', class: "product-card-image" %>
-          </div>
-          <div class="product-info">
-            <h6 class="product-info-title">Puente grua Monorriel</h6>
-            <p class="product-info-text">aquí un texto que hablará sobre la subcategoría y lo que sea que diga. Me parece que no es tan largo ni tan corto. Basta con que se le explique lo que hace la subcategoría.</p>
-          </div>
-        </div> -->
+<script>
+  // const container = document.getElementById('parrallax-container')
+
+  const boxOne = document.getElementById('box1')
+  const boxTwo = document.getElementById('box2')
+  const boxThree = document.getElementById('box3')
+  const boxFour = document.getElementById('box4')
+
+  const boxOneTop = boxOne.getBoundingClientRect().top;
+  const boxTwoTop = boxTwo.getBoundingClientRect().top;
+  const boxThreeTop = boxThree.getBoundingClientRect().top;
+  const boxFourTop = boxFour.getBoundingClientRect().top;
+
+  window.onscroll = function(){
+    boxOne.style.top = boxOneTop - window.pageYOffset + "px"
+    boxTwo.style.top = boxTwoTop - window.pageYOffset/5 + "px"
+    boxThree.style.top = boxThreeTop - window.pageYOffset + "px"
+    boxFour.style.top = boxFourTop - window.pageYOffset*1.5 + "px"
+  }
+
+ </script>

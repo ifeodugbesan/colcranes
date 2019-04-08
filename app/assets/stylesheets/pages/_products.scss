@@ -6,7 +6,7 @@
   width: fit-content;
   border-radius: 2px;
   &:hover {
-    color: black;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -65,4 +65,35 @@
   @media only screen and (max-width: 768px) {
     padding: 0;
   }
+}
+
+#parrallax-container {
+  position: relative;
+}
+
+#box1 {
+  position: absolute;
+  left: 50%;
+  top: 110vh;
+}
+
+#box2 {
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: 150vh;
+}
+
+#box3 {
+  // width: 50px;
+  position: absolute;
+  right: 5%;
+  top: 180vh;
+}
+
+#box4 {
+  width: 50px;
+  position: absolute;
+  right: 5%;
+  top: 110vh;
 }
