@@ -8,11 +8,11 @@
     <%= image_tag 'hanging-crane.png', class: "hanging-crane" %>
   </div>
 </div>
-<div class="container" id="parrallax-container">
-  <%= image_tag "box.png", class: "parrallax-box", id: "box1" %>
-  <%= image_tag "box.png", class: "parrallax-box", id: "box2" %>
-  <%= image_tag "box.png", class: "parrallax-box", id: "box3" %>
-  <%= image_tag "box.png", class: "parrallax-box", id: "box4" %>
+<div class="container parrallax-container">
+  <%= image_tag "box.png", class: "box box-lg speedy-box", id: "box1"%>
+  <%= image_tag "box.png", class: "box box-sm slow-box", id: "box2" %>
+  <%= image_tag "box.png", class: "box box-lg slow-box", id: "box3" %>
+  <%= image_tag "box.png", class: "box box-sm speedy-box", id: "box4" %>
   <div class="product-cards-container">
     <h6 class="products-main-title">Puente Gruas</h6>
     <div class="row">
@@ -184,7 +184,9 @@
 </div>
 
 <script>
-  // const container = document.getElementById('parrallax-container')
+
+  // var fast = document.querySelectorAll('.speedy-box')
+  // const slow = document.querySelectorAll('.slow-box')
 
   const boxOne = document.getElementById('box1')
   const boxTwo = document.getElementById('box2')
@@ -197,10 +199,11 @@
   const boxFourTop = boxFour.getBoundingClientRect().top;
 
   window.onscroll = function(){
-    boxOne.style.top = boxOneTop - window.pageYOffset + "px"
+    boxOne.style.top = boxOneTop - window.pageYOffset*2 + "px"
     boxTwo.style.top = boxTwoTop - window.pageYOffset/5 + "px"
     boxThree.style.top = boxThreeTop - window.pageYOffset + "px"
     boxFour.style.top = boxFourTop - window.pageYOffset*1.5 + "px"
+
   }
 
  </script>
