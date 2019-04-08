@@ -9,10 +9,14 @@
   </div>
 </div>
 <div class="container parrallax-container">
-  <%= image_tag "box.png", class: "box box-lg speedy-box", id: "box1"%>
-  <%= image_tag "box.png", class: "box box-sm slow-box", id: "box2" %>
-  <%= image_tag "box.png", class: "box box-lg slow-box", id: "box3" %>
-  <%= image_tag "box.png", class: "box box-sm speedy-box", id: "box4" %>
+  <%= image_tag "box.png", class: "box box-lg", id: "box1"%>
+  <%= image_tag "box.png", class: "box box-sm", id: "box2" %>
+  <%= image_tag "box.png", class: "box box-lg", id: "box3" %>
+  <%= image_tag "box.png", class: "box box-sm", id: "box4" %>
+  <%= image_tag "box.png", class: "box box-sm", id: "box5"%>
+  <%= image_tag "box.png", class: "box box-sm", id: "box6" %>
+  <%= image_tag "box.png", class: "box box-lg", id: "box7" %>
+  <%= image_tag "box.png", class: "box box-sm", id: "box8" %>
   <div class="product-cards-container">
     <h6 class="products-main-title">Puente Gruas</h6>
     <div class="row">
@@ -99,45 +103,6 @@
             </div>
           </div>
         </div>
-        <div class="card-container">
-          <div class="bottom-card-section"></div>
-          <div class="top-card-section">
-            <%= image_tag "background1.png", class: "card-background-1" %>
-            <div class="card-title-holder">
-              <h1 class="card-title">Sistemas de Mando</h1>
-            </div>
-            <div class="card-sub-title-holder">
-              <p class="card-sub-title">Botoneras</p>
-              <p class="card-sub-title">Radio controles</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="bottom-card-section"></div>
-          <div class="top-card-section">
-            <%= image_tag "background1.png", class: "card-background-1" %>
-            <div class="card-title-holder">
-              <h1 class="card-title">Sistemas de Mando</h1>
-            </div>
-            <div class="card-sub-title-holder">
-              <p class="card-sub-title">Botoneras</p>
-              <p class="card-sub-title">Radio controles</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="bottom-card-section"></div>
-          <div class="top-card-section">
-            <%= image_tag "background1.png", class: "card-background-1" %>
-            <div class="card-title-holder">
-              <h1 class="card-title">Sistemas de Mando</h1>
-            </div>
-            <div class="card-sub-title-holder">
-              <p class="card-sub-title">Botoneras</p>
-              <p class="card-sub-title">Radio controles</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <%= image_tag 'colcranes-line-break.png', class: "colcranes-line-break" %>
@@ -180,30 +145,40 @@
         </div>
       </div>
     </div>
+    <%= image_tag 'colcranes-line-break.png', class: "colcranes-line-break" %>
+    <h6 class="products-main-title">Porticos Manuales</h6>
   </div>
 </div>
 
 <script>
 
-  // var fast = document.querySelectorAll('.speedy-box')
-  // const slow = document.querySelectorAll('.slow-box')
-
   const boxOne = document.getElementById('box1')
   const boxTwo = document.getElementById('box2')
   const boxThree = document.getElementById('box3')
   const boxFour = document.getElementById('box4')
+  const boxFive = document.getElementById('box5')
+  const boxSix = document.getElementById('box6')
+  const boxSeven = document.getElementById('box7')
+  const boxEight = document.getElementById('box8')
 
   const boxOneTop = boxOne.getBoundingClientRect().top;
   const boxTwoTop = boxTwo.getBoundingClientRect().top;
   const boxThreeTop = boxThree.getBoundingClientRect().top;
   const boxFourTop = boxFour.getBoundingClientRect().top;
+  const boxFiveTop = boxFive.getBoundingClientRect().top;
+  const boxSixTop = boxSix.getBoundingClientRect().top;
+  const boxSevenTop = boxSeven.getBoundingClientRect().top;
+  const boxEightTop = boxEight.getBoundingClientRect().top;
 
   window.onscroll = function(){
     boxOne.style.top = boxOneTop - window.pageYOffset*2 + "px"
     boxTwo.style.top = boxTwoTop - window.pageYOffset/5 + "px"
     boxThree.style.top = boxThreeTop - window.pageYOffset + "px"
     boxFour.style.top = boxFourTop - window.pageYOffset*1.5 + "px"
-
+    boxFive.style.top = boxFiveTop - window.pageYOffset/3 + "px"
+    boxSix.style.top = boxSixTop - window.pageYOffset/5 + "px"
+    boxSeven.style.top = boxSevenTop - window.pageYOffset/4 + "px"
+    boxEight.style.top = boxEightTop - window.pageYOffset*1.5 + "px"
   }
 
  </script>

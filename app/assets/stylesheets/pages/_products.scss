@@ -75,8 +75,12 @@
   position: absolute;
 }
 
+.box-lg {
+  width: 200px;
+}
+
 .box-sm {
-  width: 50%;
+  width: 50px;
 }
 
 #box1 {
@@ -97,4 +101,24 @@
 #box4 {
   right: 5%;
   top: 110vh;
+}
+
+#box5 {
+  right: 45%;
+  top: 110vh;
+}
+
+#box6 {
+  left: 0;
+  top: 260vh;
+}
+
+#box7 {
+  right: 5%;
+  top: 300vh;
+}
+
+#box8 {
+  right: 15%;
+  top: 280vh;
 }
