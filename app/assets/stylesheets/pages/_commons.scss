@@ -1,0 +1,87 @@
+
+// FONT WEIGHTS
+.bold {
+  font-weight: bold;
+}
+.lighter {
+  font-weight: lighter;
+}
+
+// FONT SIXES
+.xl-text {
+  font-size: 7vh;
+}
+.large-text {
+  font-size: 5vh;
+}
+.medium-text {
+  font-size: 3vh;
+}
+.small-text {
+  font-size: 2.5vh;
+}
+.tiny-text {
+  font-size: 2vh;
+}
+
+// TEXT DECORATIONS
+.underline {
+  text-decoration: underline;
+}
+
+// Colors
+.grey {
+  color: #676767;
+}
+.light-grey {
+  color: #8E8E8E;
+}
+.maroon {
+  color: #6B2022;
+}
+.grey-background {
+  background-color: #F7F7F7;
+}
+.white {
+  color: #fff;
+}
+
+// Spacing
+.margin-top {
+  margin-top: 20px;
+}
+.margin-bottom {
+  margin-bottom: 20px;
+}
+.large-margin-top {
+  margin-top: 40px;
+}
+.no-margin {
+  margin: 0;
+}
+.no-top-margin {
+  margin-top: 0;
+}
+.no-right-margin {
+  margin-right: 0;
+}
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+.no-left-margin {
+  margin-left: 0;
+}
+
+// Dimensions
+.full-screen-width {
+  width: 100vw;
+}
+.half-screen-width {
+  width: 50vw;
+}
+.full-screen-height {
+  width: 100vh;
+}
+.half-screen-height {
+  width: 50vh;
+}
