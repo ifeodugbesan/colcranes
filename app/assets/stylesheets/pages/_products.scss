@@ -44,11 +44,20 @@
   @media only screen and (max-width: 992px) {
     margin: 48px 20px;
   }
+  @media only screen and (max-width: 768px) {
+    margin: 48px 0;
+  }
 }
 
 .product-info-title {
   margin-top: 10px;
   color: #1f224e;
+}
+
+.mobile-productos {
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .product-info-text {
