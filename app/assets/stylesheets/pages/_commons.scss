@@ -85,3 +85,16 @@
 .half-screen-height {
   width: 50vh;
 }
+
+.absCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
