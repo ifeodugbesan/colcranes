@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/contacts", to: "pages#contacts"
   get "/services", to: "pages#services"
   get "/products", to: "pages#products"
+  get "/repuestos", to: "pages#repuestos"
   get 'download_pdf', to: "pages#download_pdf"
   get 'send_email', to: "pages#send_email"
 
