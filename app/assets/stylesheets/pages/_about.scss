@@ -173,7 +173,7 @@
   overflow: hidden;
   height: 150px;
   background-color: #F9F9F9;
-  padding-left: 100%;
+  // padding-left: 100%;
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -197,10 +197,11 @@
       height: 100px;
       @media only screen and (max-width: 768px) {
         height: 100px;
-        width: 100px;
+        width: auto;
       }
       display: inline-block;
-      padding: 0 2rem;
+      // padding: 0 2rem;
+      margin: 0 50px;
     }
   }
 }
