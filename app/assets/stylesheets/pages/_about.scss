@@ -141,8 +141,7 @@
 }
 
 .marquee-logos {
-  height: 150px;
-  width: 150px;
+  height: 100px;
   @media only screen and (max-width: 768px) {
     height: 100px;
     width: 100px;
@@ -155,13 +154,16 @@
   margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
 .marquee span {
   display: inline-block;
   font-size: 20px;
   position: relative;
   left: 100%;
-  animation: marquee 17.6s linear infinite;
+  animation: marquee 18.4s linear infinite;
 }
 
 .marquee span:nth-child(1) {
@@ -187,12 +189,6 @@
 }
 .marquee span:nth-child(8) {
   animation-delay: 5.6s;
-}
-.marquee span:nth-child(9) {
-  animation-delay: 6.4s;
-}
-.marquee span:nth-child(10) {
-  animation-delay: 7.2s;
 }
 
 @keyframes marquee {
