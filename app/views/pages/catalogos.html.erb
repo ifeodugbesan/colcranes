@@ -3,29 +3,74 @@
     <h3>Descarga Nuestros Catalogos</h3>
   </div>
   <div class="catalogos-content">
-    <%= image_tag 'rmlogo.png' %>
+    <%= image_tag 'colcranes-navbar-logo.png' %>
     <div class="catalogos-botones">
-      <button class="catalogo">Brochure-R&M<i class="fas fa-arrow-alt-circle-down"></i></button>
-      <button class="catalogo">Linea de Productos<i class="fas fa-arrow-alt-circle-down"></i></button>
-      <button class="catalogo">Spacemaster SX<i class="fas fa-arrow-alt-circle-down"></i></button>
-      <button class="catalogo">Spacemaster SXL<i class="fas fa-arrow-alt-circle-down"></i></button>
+      <%= link_to download_pdf_path + "?name=presentacion_corporativa", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Presentacion Corporativa</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=catalogo_de_productos", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Catalogo De Productos</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
     </div>
   </div>
   <div class="catalogos-content">
-    <h5>Catálogos Black Bear</h5>
-    <button class="catalogo">Air Chain Host<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Hand Chain & Lever Hoist<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Electric Chain Hoist<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Electric Chain Hoist NHD<i class="fas fa-arrow-alt-circle-down"></i></button>
+    <%= image_tag 'rmlogo.png' %>
+    <div class="catalogos-botones">
+      <%= link_to download_pdf_path + "?name=brochure_randm", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Brochure-R&M</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=linea_de producto", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Linea de Productos</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=spacemaster_sx", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Spacemaster SX</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=spacemaster_sxl", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Spacemaster SXL</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+    </div>
   </div>
   <div class="catalogos-content">
-    <h5>Catálogos Conductix</h5>
-    <button class="catalogo">Energy & Data Transmission Systems<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Spring Driven Cable Reels<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Conductor Bar<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Cable Festoon Systems<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Push Button Pendants<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Saga Radio Remote Controls<i class="fas fa-arrow-alt-circle-down"></i></button>
-    <button class="catalogo">Spring Balancers<i class="fas fa-arrow-alt-circle-down"></i></button>
+    <%= image_tag 'black-bear.png' %>
+    <div class="catalogos-botones">
+      <%= link_to download_pdf_path + "?name=air_chain_hoist", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Air Chain Host</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=hand_chain_lever_hoist", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Hand Chain & Lever Hoist</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=eletric_chain_hoist", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Electric Chain Hoist</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=electric_chain_hoist_hnd", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Electric Chain Hoist NHD</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+    </div>
+  </div>
+  <div class="catalogos-content">
+    <%= image_tag 'conductix.png' %>
+    <div class="catalogos-botones">
+      <%= link_to download_pdf_path + "?name=energy_data_transmission_systems", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Energy & Data Transmission Systems</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=spring_driven_cable_reels", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Spring Driven Cable Reels</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=conductor_bar", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Conductor Bar</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=cable_festoon_systems", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Cable Festoon Systems</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=push_button_pendants", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Push Button Pendants</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=saga_radio_remote_controls", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Saga Radio Remote Controls</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+      <%= link_to download_pdf_path + "?name=spring_balancers", class: "catalogos-link" do %>
+        <button class="catalogo"><span style="flex: 1;">Spring Balancers</span><i class="fas fa-arrow-alt-circle-down"></i></button>
+      <% end %>
+    </div>
   </div>
 </div>
