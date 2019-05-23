@@ -19,6 +19,7 @@
 }
 
 .home-banner-content {
+  font-weight: 300;
   color: white;
   width: 40%;
   height: 50vh;
@@ -41,7 +42,7 @@
   h1 {
     font-weight: bold;
     font-size: 40px;
-    margin: 0 0 5px 0;
+    margin: 0 0 0px 0;
   }
   hr {
     width: 100%;
@@ -53,11 +54,12 @@
   a {
     background: #FAC700;
     padding: 15px 30px;
-    color: white;
+    color: #594808;
     border-radius: 2px;
     &:hover {
-      color: white;
+      color: #594808;
       text-decoration: none;
+      background-color: #F3C106;
     }
   }
 }
@@ -74,6 +76,7 @@
   padding: 10%;
   width: 70%;
   p {
+    font-weight: 300;
     margin: 0;
     color: #A3A3A3;
   }
@@ -107,7 +110,9 @@
   color: #3498DC;
   letter-spacing: 1px;
   h6 {
-    font-weight: bold;
+    font-weight: 400;
+    margin: 10px 0px;
+    font-family: 'Open-Sans', sans-serif;
   }
 }
 
@@ -141,7 +146,8 @@
 
 .home-title {
   color: #3498DC;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: 'Open-Sans', sans-serif;
 }
 
 .recent-works-container {
@@ -149,7 +155,7 @@
 }
 
 .recent-works-image {
-  padding: 30px;
+  padding: 15px;
   img {
     width: 100%;
   }
@@ -158,12 +164,18 @@
 .home-products-text {
   font-size: 14px;
   color: #A3A3A3;
+  font-weight: 300;
 }
 
 .home-products-link {
   font-size: 14px;
   color: #707783;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    color: #303030;
+  }
 }
 
 .home-products-container {
@@ -188,12 +200,18 @@
 .home-services-text {
   font-size: 14px;
   color: #A3A3A3;
+  font-weight: 300;
 }
 
 .home-services-link {
   font-size: 14px;
   color: #707783;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    color: #303030;
+  }
 }
 
 .home-services-container {
@@ -243,6 +261,7 @@
   }
   p {
     font-size: 14px;
+    font-weight: 300;
   }
 }
 

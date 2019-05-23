@@ -2,6 +2,10 @@
   height: 200px;
   background: #3498DC;
   padding: 20px 40px;
+
+  @include for-phone-only {
+    height: 300px;
+  }
 }
 
 .footer-info-container {
@@ -23,10 +27,14 @@
     display: none;
   }
   p {
-    margin: 15px 0;
+    margin: 5px 0;
     color: white;
     font-size: 14px;
     font-weight: lighter;
+  }
+
+  & img {
+    margin-bottom: 20px;
   }
 }
 
@@ -37,7 +45,7 @@
   p {
     margin: 0;
     color: white;
-    font-weight: lighter;
+    font-weight: 300;
   }
 }
 
@@ -57,7 +65,8 @@
     margin: 0;
     color: white;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
+    letter-spacing: 1px;
   }
   a {
     color: white;
